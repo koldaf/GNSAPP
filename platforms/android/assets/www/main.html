@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="themes/latest_koldaf.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/customGui.css"/>
+        <title>GNS APP</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/myAddOn.js"></script>
+        <script>		//$( document ).on( "pagecreate", "#main_page", function() 
+			//window.localStorage.clear();
+		</script>
+    </head>
+    <body>
+        <div id="page1" data-role="page" data-ajax="false" data-theme="a">
+          <div data-role="header">
+            <h1>GNS Mobile App</h1>
+            <div class="toolbar">
+                	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                    <!--<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" id="user">User</button>-->
+                    <div class="l2r">
+                    	<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info">info</button>
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">share</button>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content">
+          		<section class="ui-responsive">
+                	<img src="img/app1.png" class="main_logo" draggable="false">
+                </section>
+          		<section class="ui-grid-a ui-responsive">
+                	<aside class="ui-block-a block"> 
+                    	<div class="ui-bar ui-bar-a bar">Read</div>
+                        <p>Start reading on the App<br>
+							Click the button to continue<br>
+                            <a href="pages.html" data-ajax="false" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left" >
+                            	Read</a>
+                        </p>
+                    </aside>
+                    <aside class="ui-block-b block"> 
+                    	<div class="ui-bar ui-bar-a bar">Help</div>
+                        <p> Get Help on the useage of the Package<br>
+                        <a href="#" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left" >Help</a>
+                        </p>
+					</aside>
+                    <aside class="ui-solo-grid block">
+                    	<div class="ui-bar ui-bar-a bar">About</div>
+                        <p> Do you want to know more about the App, <br>
+                        	Read an Introductory Note on the Package <br>
+                           <a href="#" data-role="button" class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-btn-icon-left" >
+                           	Touch Here</a>
+                        </p>
+                    </aside>
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div>
+        </div>
+        
+        <!--Registration Page-->
+        <div id="reg" data-role="page" data-transition="pop" data-theme="a">
+          <div data-role="header">
+            <h1>Registration</h1>
+            <div class="toolbar">
+                	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                    <div class="l2r">
+                    	<button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info">info</button>
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">share</button>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content">
+          		<section class="ui-responsive">
+                	<form id="regForm" action="http://koldaf.eu5.org/gnsapp/registration.php" method="get">
+                    	<div class="ui-field-contain">
+                    	<label for="name" class="ui-hidden-accessible">Username</label>
+                    	<input type="text" placeholder="Username" id="name" name="name"  required data-mini="true" />
+                        </div>
+                        <div class="ui-field-contain">
+                        <label for="phone" class="ui-hidden-accessible">Phone Number</label>
+                        <input type="number" placeholder="Phone Number" id="phn" name="phn" required data-mini="true"/>
+                        </div>
+                        <div class="ui-field-contain">
+                        <label for="mail" class="ui-hidden-accessible" >E-mail</label>
+                        <input type="email" placeholder="Email Address" id="mail" name="mail" required data-mini="true"/>
+                        </div>
+                        <div class="ui-field-contain">
+                        <label for="phone" class="ui-hidden-accessible" >Faculty</label>                       
+                        <select name="faculty" id="faculty" data-mini="true" data-native-menu="false">
+                        	<option value="">Select Faculty</option>
+                            <option value="foa">Faculty of Agriculture</option>
+                            <option value="fops">Faculty of Physical Science</option>
+                            <option value="fols">Faculty of Life Science</option>
+                            <option value="foet">Faculty of Engineering and Technology</option>
+                            <option value="foss">Faculty of Social Science</option>
+                            <option value="foa">Faculty of Arts</option>
+                            <option value="foes">Faculty of Environmental Science</option>
+                            <option value="focis">Faculty of Computer and Information Science</option>
+                            <option value="fol">Faculty of Law</option>
+                            <option value="fohs">College of Health Science</option>
+                            <option value="foms">Faculty of Management Science</option>
+                            <option value="foe">Faculty of Education</option>
+                            <option value="fobms">Faculty of Basic Medical Sciences</option>
+                            <option value="focs">Faculty of Clinical Sciences</option>
+                            <option value="fovs">Faculty of Veterinary Medicine</option>
+                        </select>
+                       </div>
+                       <div class="ui-field-contain">
+                        <label for="gender" class="ui-hidden-accessible">Gender</label>
+                        <select name="gender" id="gender" data-mini="true" data-native-menu="false">
+                        	<option value="">Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        </div>
+                        <div class="ui-field-contain">
+                        <div id="loading"><img src="img/default.gif"/> Loading...</div>
+                        <p><button class="ui-btn-inline ui-shadow ui-btn ui-corner-all ui-btn-icon-left ui-icon-star">Submit</button></p>
+                        </div>
+                    </form>
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div>
+        </div>
+        <script>
+			$('#regForm').on('submit',function(){
+				console.log('Sending...');
+				var that = {url:$(this).attr('action'), 
+							method:$(this).attr('method'),
+							data:$(this).serialize()};
+							console.log('URL: '+ that.url +'\n DATA: '+ that.data);
+				$.getJSON(that.url,that.data,function(pings){					
+					if(pings.activate == "false"){
+						switch(pings.ping){
+							case 100:
+								alert("Please complete all the form")
+							break;
+							case 101:
+								alert("Please Input a Valid Email")
+							break;
+							case 102:
+								alert("Please Input a Valid Phone Number")
+							break;
+							case 103:
+								alert("Username no longer available... Try another one.")
+							break;
+							case 104:
+								alert("Sorry! Activation Closed")
+							break;
+						}
+					}else if(pings.activate == "true"){
+						switch(pings.ping){
+							case 105:
+								window.localStorage['user'] = $('#name').val()
+								alert("Congratuations  "+window.localStorage['user']+" .... Your App is Activated");
+								window.location = "main.html";
+							break
+						}
+							
+					}
+					console.log('Status: '+pings.activate +'\n Ping: '+ pings.ping);
+					
+				})
+				
+				return false;
+			});
+		</script>
+    </body>
+</html>

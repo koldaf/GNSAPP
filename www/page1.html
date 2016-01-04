@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="themes/latest_koldaf.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/lightbox.css"/>
+        <link rel="stylesheet" href="css/customGui.css"/>
+        <title>GNS APP</title>
+        <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script> 
+       <script type="text/javascript" src="js/myAddOn.js"></script>
+    </head>
+    <body>
+        <div id="page1" data-role="page" data-ajax="false" data-theme="a">
+          <div data-role="header">
+            <h1>GNS Mobile App</h1>
+            <div class="toolbar">
+                	<a data-role="button" href="#left-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-appicon">
+                    	Topics</a>
+                    <div class="l2r">
+                    	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                        <a  data-role="button" href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">
+                        home</a>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content" class="bgs">
+         		<aside class="ui-bar ui-bar-a bar">Meaning of Library</aside>
+               <section class="content"> 
+               <p>The origin of the meaning of the word library has been traced to the Latin word “liber” meaning “books”. On the basis of the Latin interpretation, early professionals saw the library as a place where important records of human ideas were organized, processed and disseminated to users for the purposes of posterity and preservation from human and non-human damages. Subsequent library and information science scholars defined or explained the concept of the library based on the prevailing experience at the time such definition emerged.</p>
+                <p>
+                	The Glossary of Library Terms defines the library as a collection of books and other literary materials kept for reading, study and consultation. Furthermore, the library can be a building, a room or rooms containing a collection of books for use of the public, a portion of the public, members of a society, a public institution or an establishment charged with the responsibility to consult such books. <p>
+                    <div class="imageManager ui-responsive">
+                    	<a href="#library" data-rel="popup" data-position-to="window" data-transition="slidedown">
+                        	<img src="img/library.jpg" alt="Library Shelves" />
+                        </a>
+                    	<div data-role="popup" id="library" data-overlay-theme="c" data-theme="a" data-corners="false">
+                        	<img src="img/library.jpg" style="max-height:512px;"/>
+                            <p>Book shelves in the Library</p>
+                        </div>
+                    </div>
+                   <p>According to Awolola and Jatto (2003), the library is a collection of information materials such as books, films, magazines, maps, manuscript, phonograph records etc. for use. Some people see it as a collection of books, serials and non-book materials kept for the purpose of reading and consultation. 
+                   </p>
+                   <p>The library is further regarded as a collection of books and other literary materials property arranged in a building or rooms for the promotion of human knowledge. Nnaji (1986) defined library as a collection of books and other forms of records housed, organized and interpreted to meet broad and various needs of the people for information, knowledge, recreation and aesthetic enjoyments.</p>
+                  
+                    <div class="imageManager ui-responsive">
+                    	<a href="#library1" data-rel="popup" data-position-to="window" data-transition="slidedown">
+                        	<img src="img/library11.jpg" alt="Library Shelves" />
+                        </a>
+                    	<div data-role="popup" id="library1" data-overlay-theme="c" data-theme="a" data-corners="false">
+                        	<img src="img/library11.jpg" style="max-height:512px;"/>
+                            <p>Book shelves in the Library </p>
+                        </div>
+                    </div>
+                   <p> The various definitions in this paragraph perceive the library as containing information-bearing materials in different formats and manner of communication and these materials can be collected and put together in a place for purpose other than just to use them where they are kept.
+                </p>
+                <!--div data-role="navbar" class="ui-responsive">
+                	<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">Share Page</a>
+                </div-->
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div> 
+              <!--panel starts here-->
+        <!-- /panel -->
+    <div data-role="panel" id="left-panel" class="ui-panel menu_panel" data-display="overlay" data-position="left" data-theme="b">
+    	<div data-role="header" data-theme="b" data-position="inline"><h1>Topics List</h1></div>
+        <ul class="ui-alt-icon ui-nodisc-icon" data-filter="true" data-filter-theme="a">
+			<li><a href="page1.html">Meaning of Library</a></li>
+                      <li><a href="page2.html">Library as a Resource and Information Center</a></li>
+                      <li><a href="page3.html">Library as a Storehouse</a></li>
+                      <li><a href="page4.html">Library as a House of Collection</a></li>
+                      <li><a href="page5.html">Objectives of the Library</a></li>
+                      <li><a href="page6.html">Basic Objectives of the Library</a></li>
+                      <li><a href="page7.html">Academic Library</a></li>
+                      <li><a href="page8.html">School Library</a></li>
+                      <li><a href="page9.html">Public Library</a></li>
+                      <li><a href="page10.html">National Library</a></li>
+                      <li><a href="page11.html">Special Library</a></li>
+                      <li><a href="page12.html">Structure of a Library</a></li>
+                      <li><a href="page13.html">Application of ICT to Library Services</a></li>
+                      <li><a href="page14.html">The Internet and World Wide Web</a></li>
+                      <li><a href="page15.html">Virtual Library</a></li>
+                      <li><a href="page16.html">Electronic Library</a></li>
+                      <li><a href="page17.html">Digital Library</a></li>
+                      <li><a href="page18.html">Web Search Tools</a></li>
+                      <li><a href="page19.html">Databases</a></li>
+        </ul>
+        <div class="bot">
+          <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">
+              Close
+          </a> 
+        </div>
+        </div>
+   
+    </body>
+</html>

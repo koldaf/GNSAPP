@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="themes/latest_koldaf.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/customGui.css"/>
+        <title>GNS APP</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/myAddOn.js"></script>
+    </head>
+    <body>
+        <div id="page1" data-role="page" data-ajax="false" data-theme="a">
+          <div data-role="header">
+            <h1>GNS Mobile App</h1>
+            <div class="toolbar">
+                	<a data-role="button" href="#left-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-appicon">
+                    	Topics</a>
+                    <div class="l2r">
+                    	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                        <a  data-role="button" href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">
+                        home</a>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content" class="bgs">
+         		<aside class="ui-bar ui-bar-a bar">Web Search Tools</aside>
+               <section class="content">
+  <p>
+  	The most reliable information sources on the internet are databases. A database is a collection of structured records organized in such a way to permit orderly retrieval, e.g for research, study, or administration. A database may contain citations or it may have full-text articles. Every database has its own subject scope and coverage. It is searchable in a variety of ways, such as tittle, author, subject, and keyword, but only in its normal database environment, using the database-specific search engine. There are Bibliographic databases, Full-text databases, Numeric databases, Image databases, Audio/Video databases, Mixed databases.</p>
+<p> A database is designed in such a way that the user can retrieve a shortlist of relevant articles. The aim of database searching for reference purpose is (often) to retrieve a collection of say 50, mostly relevant documents, primarily journal articles and preferably in full text and in single query. Several search actions are normally needed to get that query or search strategy.
+Database search is a process. It involves the following activities:</p>
+<ul>
+<li>Preparation: Identifying key concept, search terms</li>
+<li>Decision on subject or keyword search (or both)</li>
+<li>Constructing a query</li>
+<li>Building a keyword search statement (start simple).</li>
+<li>Limiting focus search results</li>
+<li>Screening search results by some variable (language, publication date, etc.). The initial statement can be limited (pre-limit), or post-limit after reviewing results (recommended approach).</li>
+<li>Refining to expand or reduce results</li>
+</ul>
+<p>
+It is rare to get good results on the first try. If you get too many results, add new concepts or add limits to your research. If you get few results, remove concepts that are not critical, remove any limits.
+Some databases require subscription while others do not.</p>
+<p>There is a comprehensive list of free and subscription online academic databases.
+<a href="http://www.wholeagain.com/free_academic_databases.html">http://www.wholeagain.com/free_academic_databases.html</a>
+<a href="http://en.wikipedia.org/wiki/list_of_academic_databases_and_search_engines">http://en.wikipedia.org/wiki/list_of_academic_databases_and_search_engines</a>
+It is important to point out that subscription databases like The Essential Electronic Agriculture Library (TEEAL) and the E-granary databases can be used without Internet connection.
+
+</p>
+            
+                <!--<div data-role="navbar" class="ui-responsive">
+                	<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                    <!--<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                </div>-->
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div> 
+              <!--panel starts here-->
+        <!-- /panel -->
+    <div data-role="panel" id="left-panel" class="ui-panel menu_panel" data-display="overlay" data-position="left" data-theme="b">
+    	<div data-role="header" data-theme="b" data-position="inline"><h1>Topics List</h1></div>
+        <ul class="ui-alt-icon ui-nodisc-icon" data-filter="true" data-filter-theme="a">
+			<li><a href="page1.html">Meaning of Library</a></li>
+                      <li><a href="page2.html">Library as a Resource and Information Center</a></li>
+                      <li><a href="page3.html">Library as a Storehouse</a></li>
+                      <li><a href="page4.html">Library as a House of Collection</a></li>
+                      <li><a href="page5.html">Objectives of the Library</a></li>
+                      <li><a href="page6.html">Basic Elements of the Library</a></li>
+                      <li><a href="page7.html">Academic Library</a></li>
+                      <li><a href="page8.html">School Library</a></li>
+                      <li><a href="page9.html">Public Library</a></li>
+                      <li><a href="page10.html">National Library</a></li>
+                      <li><a href="page11.html">Special Library</a></li>
+                      <li><a href="page12.html">Structure of a Library</a></li>
+                      <li><a href="page13.html">Application of ICT to Library Services</a></li>
+                      <li><a href="page14.html">The Internet and World Wide Web</a></li>
+                      <li><a href="page15.html">Virtual Library</a></li>
+                      <li><a href="page16.html">Electronic Library</a></li>
+                      <li><a href="page17.html">Digital Library</a></li>
+                      <li><a href="page18.html">Web Search Tools</a></li>
+                      <li><a href="page19.html">Databases</a></li>
+        </ul>
+        <div class="bot">
+          <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">
+              Close
+          </a> 
+        </div>
+        </div>
+   
+    </body>
+</html>

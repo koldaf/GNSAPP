@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="themes/latest_koldaf.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/customGui.css"/>
+        <title>GNS APP</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/myAddOn.js"></script>
+    </head>
+    <body>
+        <div id="page1" data-role="page" data-ajax="false" data-theme="a">
+          <div data-role="header">
+            <h1>GNS Mobile App</h1>
+            <div class="toolbar">
+                	<a data-role="button" href="#left-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-appicon">
+                    	Topics</a>
+                    <div class="l2r">
+                    	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                        <a  data-role="button" href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">
+                        home</a>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content" class="bgs">
+         		<aside class="ui-bar ui-bar-a bar">Digital Library</aside>
+               <section class="content">
+  <p>
+  	The attributes of a digital library includes functions of collection, organization, preservation, access and economy. Notable features include digitalization of materials and metadata but it is obvious that electronic dowments are not localized in them. They have telecommunication connections. Electronic materials are therefore flexible, easy to revise, rearrange and reformatted and can combine with other documents. Such collection is not as bulky as the hard copy.</p>
+            
+                <!--<div data-role="navbar" class="ui-responsive">
+                	<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                    <!--<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                </div>-->
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div> 
+              <!--panel starts here-->
+        <!-- /panel -->
+    <div data-role="panel" id="left-panel" class="ui-panel menu_panel" data-display="overlay" data-position="left" data-theme="b">
+    	<div data-role="header" data-theme="b" data-position="inline"><h1>Topics List</h1></div>
+        <ul class="ui-alt-icon ui-nodisc-icon" data-filter="true" data-filter-theme="a">
+			<li><a href="page1.html">Meaning of Library</a></li>
+                      <li><a href="page2.html">Library as a Resource and Information Center</a></li>
+                      <li><a href="page3.html">Library as a Storehouse</a></li>
+                      <li><a href="page4.html">Library as a House of Collection</a></li>
+                      <li><a href="page5.html">Objectives of the Library</a></li>
+                      <li><a href="page6.html">Basic Elements of the Library</a></li>
+                      <li><a href="page7.html">Academic Library</a></li>
+                      <li><a href="page8.html">School Library</a></li>
+                      <li><a href="page9.html">Public Library</a></li>
+                      <li><a href="page10.html">National Library</a></li>
+                      <li><a href="page11.html">Special Library</a></li>
+                      <li><a href="page12.html">Structure of a Library</a></li>
+                      <li><a href="page13.html">Application of ICT to Library Services</a></li>
+                      <li><a href="page14.html">The Internet and World Wide Web</a></li>
+                      <li><a href="page15.html">Virtual Library</a></li>
+                      <li><a href="page16.html">Electronic Library</a></li>
+                      <li><a href="page17.html">Digital Library</a></li>
+                      <li><a href="page18.html">Web Search Tools</a></li>
+                      <li><a href="page19.html">Databases</a></li>
+        </ul>
+        <div class="bot">
+          <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">
+              Close
+          </a> 
+        </div>
+        </div>
+   
+    </body>
+</html>

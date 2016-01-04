@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="themes/latest_koldaf.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/customGui.css"/>
+        <title>GNS APP</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/myAddOn.js"></script>
+    </head>
+    <body>
+        <div id="page1" data-role="page" data-ajax="false" data-theme="a">
+          <div data-role="header">
+            <h1>GNS Mobile App</h1>
+            <div class="toolbar">
+                	<a data-role="button" href="#left-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-appicon">
+                    	Topics</a>
+                    <div class="l2r">
+                    	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                        <a  data-role="button" href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">
+                        home</a>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content" class="bgs">
+         		<aside class="ui-bar ui-bar-a bar">The Structure of a Library</aside>
+               <section class="content">
+  <p>
+
+<strong>Technical Services Division</strong><br>
+The primary role of the Technical Service Division of a library is to acquire and process library materials ready for the use of library patrons.<br>
+<strong>The Division is made up of the following sections and units:</strong><br>
+<ul>
+<li><strong>Acquisitions Section:</strong> The section has the responsibility to acquire materials for the library. It performs its responsibility through purchases, gifts, donations and endowments. Such materials could be books, serials and non-book materials.</li>
+<li><strong>Cataloguing and classification Section:</strong> This section receives books that have been accessioned by the Acquisitions Section for further processing. The main duty of the section is to provide bibliographic information of the library books and assign subject headings and locations (Class) marks to the books before they are sent to the Readers Services Division for Shelving and library patrons’ usage...</li>
+<li><strong>Serials Section:</strong> The serial section handles journals and related serial materials that come into the library. The section catalogues, classifies and makes the serial materials available to library users.</li>
+<li><strong>Bindery Unit:</strong> The role of the Bindery Unit of any library is to bind or mend he materials, in terms of shape.</li>
+</ul>
+<strong>Readers Services Division</strong><br>
+This is a part of the library that offers direct services to library users. The Division comprises the following sections that perform specific functions and routines:  <br>
+<ul>
+<li><strong>Circulation Section:</strong> This is more or less the public relations sections of the library. It is at the circulation section that library users register to become bonafide library clientele. The section is also an avenue for users to borrow and return borrowed books. The section houses books that are on the open shelves.</li>
+<li><strong>Reference Section:</strong> Like the circulation Section, the reference section performs public relations functions. The section houses Reference materials which can only be consulted in the library. It also performs inter-library lending on behalf of the users. The section also has the responsibility to provide answers to directional and non-directional queries from library users.</li>
+<li><strong>Audio-Visual Section:</strong> The section handles the non-print library materials. It processes the materials and make them available to users on demand. Photocopy service is a unit under Audio-Visual Section.</li>
+<li><strong>Documents Section: </strong>Documents, government and corporate publications on diverse interests are in the custody of the Documents Section. The section acquires, processes and make the materials available to library clientele.</li>
+</ul>
+<strong>Electronics Support Services Division</strong>
+<p>As the name implies, the Division has the responsibility to provide services in electronic format to library users. Presently, the electronic support services division of a library operates three inter-related sections: E-library section, Digital Library automation section. </p>
+
+</p>
+            
+                <!--<div data-role="navbar" class="ui-responsive">
+                	<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                    <!--<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                </div>-->
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div> 
+              <!--panel starts here-->
+        <!-- /panel -->
+    <div data-role="panel" id="left-panel" class="ui-panel menu_panel" data-display="overlay" data-position="left" data-theme="b">
+    	<div data-role="header" data-theme="b" data-position="inline"><h1>Topics List</h1></div>
+        <ul class="ui-alt-icon ui-nodisc-icon" data-filter="true" data-filter-theme="a">
+			<li><a href="page1.html">Meaning of Library</a></li>
+                      <li><a href="page2.html">Library as a Resource and Information Center</a></li>
+                      <li><a href="page3.html">Library as a Storehouse</a></li>
+                      <li><a href="page4.html">Library as a House of Collection</a></li>
+                      <li><a href="page5.html">Objectives of the Library</a></li>
+                      <li><a href="page6.html">Basic Elements of the Library</a></li>
+                      <li><a href="page7.html">Academic Library</a></li>
+                      <li><a href="page8.html">School Library</a></li>
+                      <li><a href="page9.html">Public Library</a></li>
+                      <li><a href="page10.html">National Library</a></li>
+                      <li><a href="page11.html">Special Library</a></li>
+                      <li><a href="page12.html">Structure of a Library</a></li>
+                      <li><a href="page13.html">Application of ICT to Library Services</a></li>
+                      <li><a href="page14.html">The Internet and World Wide Web</a></li>
+                      <li><a href="page15.html">Virtual Library</a></li>
+                      <li><a href="page16.html">Electronic Library</a></li>
+                      <li><a href="page17.html">Digital Library</a></li>
+                      <li><a href="page18.html">Web Search Tools</a></li>
+                      <li><a href="page19.html">Databases</a></li>
+        </ul>
+        <div class="bot">
+          <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">
+              Close
+          </a> 
+        </div>
+        </div>
+   
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="themes/latest_koldaf.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/customGui.css"/>
+        <title>GNS APP</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script type="text/javascript" src="js/myAddOn.js"></script>
+    </head>
+    <body>
+        <div id="page1" data-role="page" data-ajax="false" data-theme="a">
+          <div data-role="header">
+            <h1>GNS Mobile App</h1>
+            <div class="toolbar">
+                	<a data-role="button" href="#left-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-appicon">
+                    	Topics</a>
+                    <div class="l2r">
+                    	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                        <a  data-role="button" href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">
+                        home</a>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content" class="bgs">
+         		<aside class="ui-bar ui-bar-a bar">The Special Library</aside>
+               <section class="content">
+  <p>
+This is a library or information Centre for specialized body of knowledge/discipline for a specialized audience/group of users, which is established and maintained by an individual, corporation, association, government agency or any other group.
+It can be defined as a specialized or departmental collection within a library for services to a specialized clientele through the use of varied media and methods (Specialized Libraries Association, 1985). </p>
+ <p>This kind of library can be found in school for the physically challenged, or special training, research institutes, private homes and organization, ministries, government agencies, religious organization, or owned by individuals. According to Issa (2003), a special library is set up by business, professional and religious organizations. </p><p>
+ Special libraries keep extensive files of unpublished research, reports, journals, manuscript, newspaper clippings and government or corporate reports. They have staff with specialized training to be able to serve specialized body of users. The special library is remarkable in the provision of individualized services, which reflect the purpose of it s existence.</p>
+ <p> Consequently, it is said that a special library often goes to offices or laboratories of its users rather than waiting passively. It operates proactively rather than retroactively by anticipating users’ need and making provisions to meet the needs well in advance. Sopolu library, Ikenne (Owned by Chief Obafemi Awolowo); Agricultural and Rural Management Training Institute Library, Ilorin; Cocoa Research Institute of Nigeria library, Ibadan; International Institute of Tropical Agriculture Library, Ibadan; National Institute of International Affairs Library, Lagos; Yaba Medical Centre Library, Yaba, Lagos; and Federal Institute of Industrial Research Library, Oshodi, Lagos are a few examples of social libraries in Nigeria.</p><p>
+Special library can be a research library when it is attached to a research Institute as those mentioned above. When a research library is set up by its parent Institute, it acquires resources that are meant to reflect the peculiar nature of the Institute’s Program. The primary users of a special library are member of staff of the particular institute and other researchers who have particular interest in the field(s) covered by the programs of the Institution. Research libraries are commonly referred to as Documentation Centers. </p><p>A private library may also be a special library when such library is Owned, Stocked and organized by an Individual, a corporate body(private/non-governmental organizations) and its collection is geared towards the specialize interest of its Owner(s). Such materials are basically for research work. Examples are Akanbi Oniyangi Law Library, Ilorin; Lambo Foundation Medical Library; Sopolu Library (owned by Chief Obafemi Awolowo), Ikenne.</p>
+<strong>Functions of Special Libraries</strong>
+<ol>
+<li>	<strong>Selective Dissemination of Information (SDI):</strong> Special libraries have a special relationship with heir users. Information is given to individuals according to their area of interest. For example, when the library receives journals, reports, conference papers etc, they are taken to the user as the need be.</li>
+<li> <strong>Indexing abstracting:</strong> Special library index and abstract books, journals, reports, and conference papers produced by parent bodies or similar Institutions. E.g ERIC (Educational Resource Information Centre) produces indexes and abstracts for a database.</li>
+<li>	<strong>Current Awareness Service (CAS):</strong> Special library provide current literature service which is designed to acquaint library patrons with recent publications that might help them in their research work.</li>
+</p>
+            
+                <!--<div data-role="navbar" class="ui-responsive">
+                	<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                    <!--<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                </div>-->
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div> 
+              <!--panel starts here-->
+        <!-- /panel -->
+    <div data-role="panel" id="left-panel" class="ui-panel menu_panel" data-display="overlay" data-position="left" data-theme="b">
+    	<div data-role="header" data-theme="b" data-position="inline"><h1>Topics List</h1></div>
+        <ul class="ui-alt-icon ui-nodisc-icon" data-filter="true" data-filter-theme="a">
+			<li><a href="page1.html">Meaning of Library</a></li>
+                      <li><a href="page2.html">Library as a Resource and Information Center</a></li>
+                      <li><a href="page3.html">Library as a Storehouse</a></li>
+                      <li><a href="page4.html">Library as a House of Collection</a></li>
+                      <li><a href="page5.html">Objectives of the Library</a></li>
+                      <li><a href="page6.html">Basic Elements of the Library</a></li>
+                      <li><a href="page7.html">Academic Library</a></li>
+                      <li><a href="page8.html">School Library</a></li>
+                      <li><a href="page9.html">Public Library</a></li>
+                      <li><a href="page10.html">National Library</a></li>
+                      <li><a href="page11.html">Special Library</a></li>
+                      <li><a href="page12.html">Structure of a Library</a></li>
+                      <li><a href="page13.html">Application of ICT to Library Services</a></li>
+                      <li><a href="page14.html">The Internet and World Wide Web</a></li>
+                      <li><a href="page15.html">Virtual Library</a></li>
+                      <li><a href="page16.html">Electronic Library</a></li>
+                      <li><a href="page17.html">Digital Library</a></li>
+                      <li><a href="page18.html">Web Search Tools</a></li>
+                      <li><a href="page19.html">Databases</a></li>
+        </ul>
+        <div class="bot">
+          <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">
+              Close
+          </a> 
+        </div>
+        </div>
+   
+    </body>
+</html>

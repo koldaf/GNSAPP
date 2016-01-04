@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <!--<link rel="stylesheet" type="text/css" href="css/index.css" />-->
+        <link rel="stylesheet" href="themes/latest_koldaf.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+        <link rel="stylesheet" href="css/lightbox.css"/>
+        <link rel="stylesheet" href="css/customGui.css"/>
+        <title>GNS APP</title>
+        <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>        <script type="text/javascript" src="js/myAddOn.js"></script>
+    </head>
+    <body>
+        <div id="page1" data-role="page" data-ajax="false" data-theme="a">
+          <div data-role="header">
+            <h1>GNS Mobile App</h1>
+            <div class="toolbar">
+                	<a data-role="button" href="#left-panel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-appicon">
+                    	Topics</a>
+                    <div class="l2r">
+                    	<div id="userId" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">User</div>
+                        <a  data-role="button" href="main.html" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-home">
+                        home</a>
+                    </div>
+           </div>
+          </div>
+          <div data-role="content" class="bgs">
+         		<aside class="ui-bar ui-bar-a bar">The National Library</aside>
+               <section class="content">
+   <p>
+National library is a library established by the federal government and it is maintained by national resources through tax payers’ money. National library strives principally to collect and preserve the nation’s literature though it strives to be much as international in the range of its collections as possible.<p>
+<p> National library is to other libraries what the central bank is to other banks in any country. It is therefore referred to as an apex organization for libraries in its country. For example, the national library of Nigeria library of Nigeria has branches in many states of the federation namely, Kwara, Ondo, Ogun, Kaduna, and Oyo states. Examples of national library include; National Library of Nigeria, National Library of Ghana, National Library of Scotland etc.</p>
+
+<div class="imageManager ui-responsive">
+      <a href="#lib1" data-rel="popup" data-position-to="window" data-transition="slidedown">
+          <img src="img/national library abuja.jpg" alt="Nnamdi Azikwe Library" />
+      </a>
+      <a href="#lib2" data-rel="popup" data-position-to="window" data-transition="slidedown">
+          <img src="img/paris.jpg" alt="School Library" />
+      </a>
+      <a href="#lib3" data-rel="popup" data-position-to="window" data-transition="slidedown">
+          <img src="img/1024px-National_Library_of_Scotland,_Edinburgh.JPG" alt="School Library" />
+      </a>
+      <div  id="lib1" data-role="popup" data-overlay-theme="a" data-theme="a" data-corners="false">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete
+               ui-btn-icon-notext ui-btn-right">Close</a>
+          <img src="img/national library abuja.jpg" style="max-height:512px;"/>
+          <p>National Library | Abuja, Nigeria</p>
+      </div>
+      <div  id="lib2" data-role="popup" data-overlay-theme="a" data-theme="a" data-corners="false">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete
+               ui-btn-icon-notext ui-btn-right">Close</a>
+          <img src="img/paris.jpg" style="max-height:512px;"/>
+          <p>National Library | Paris, France</p>
+      </div> 
+      <div  id="lib3" data-role="popup" data-overlay-theme="a" data-theme="a" data-corners="false">
+          <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete
+               ui-btn-icon-notext ui-btn-right">Close</a>
+          <img src="img/1024px-National_Library_of_Scotland,_Edinburgh.JPG" style="max-height:512px;"/>
+          <p>National Library | Edinburgh, Scotland</p>
+      </div>   
+</div>
+
+<strong>Functions of National Library</strong>
+<ol>
+<li>It receives, by law through legal deposit obligations, copies of all publications, books and periodicals.</li>
+<li> It has the responsibility of publishing a National Bibliography of its country.</li>
+<li>	It serves as the National Agency for the issuance of ISBN (International Standard Book Number) and it serves as the National Serials Data Centre (NSDC) for ISSN (International Standard Serial Number) of its nation</li>
+<li>	 It is responsible for the control of the National Union Catalogue and National Union List of Serials (NULOS) of its country.</li>
+<li>	It also acquires foreign documents of national important and interest.</li>
+</ol>
+
+</p>
+            
+                <!--<div data-role="navbar" class="ui-responsive">
+                	<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                    <!--<a data-role="button" href="#" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-share">
+                    	Share Page</a>
+                </div>-->
+                </section>
+          </div>
+          <div data-role="footer" data-position="fixed">
+            <h4>&copy; koldaf-2015</h4>
+          </div> 
+              <!--panel starts here-->
+        <!-- /panel -->
+    <div data-role="panel" id="left-panel" class="ui-panel menu_panel" data-display="overlay" data-position="left" data-theme="b">
+    	<div data-role="header" data-theme="b" data-position="inline"><h1>Topics List</h1></div>
+        <ul class="ui-alt-icon ui-nodisc-icon" data-filter="true" data-filter-theme="a">
+			<li><a href="page1.html">Meaning of Library</a></li>
+                      <li><a href="page2.html">Library as a Resource and Information Center</a></li>
+                      <li><a href="page3.html">Library as a Storehouse</a></li>
+                      <li><a href="page4.html">Library as a House of Collection</a></li>
+                      <li><a href="page5.html">Objectives of the Library</a></li>
+                      <li><a href="page6.html">Basic Elements of the Library</a></li>
+                      <li><a href="page7.html">Academic Library</a></li>
+                      <li><a href="page8.html">School Library</a></li>
+                      <li><a href="page9.html">Public Library</a></li>
+                      <li><a href="page10.html">National Library</a></li>
+                      <li><a href="page11.html">Special Library</a></li>
+                      <li><a href="page12.html">Structure of a Library</a></li>
+                      <li><a href="page13.html">Application of ICT to Library Services</a></li>
+                      <li><a href="page14.html">The Internet and World Wide Web</a></li>
+                      <li><a href="page15.html">Virtual Library</a></li>
+                      <li><a href="page16.html">Electronic Library</a></li>
+                      <li><a href="page17.html">Digital Library</a></li>
+                      <li><a href="page18.html">Web Search Tools</a></li>
+                      <li><a href="page19.html">Databases</a></li>
+        </ul>
+        <div class="bot">
+          <a href="#" data-rel="close" class="ui-btn ui-corner-all ui-shadow ui-mini ui-btn-inline ui-icon-delete ui-btn-icon-right">
+              Close
+          </a> 
+        </div>
+        </div>
+   
+    </body>
+</html>
