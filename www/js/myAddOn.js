@@ -45,7 +45,7 @@ $.ajaxSetup({cache:false,beforeSend: function(){
 			//check for username
 			if(!window.localStorage['user']){
 				console.log('Go to Registration Page');
-				window.location="main.html#reg";
+				//window.location="main.html#reg";
 			}else{
 				var user = window.localStorage['user'];
 				$('#userId').html(user);
